@@ -1,97 +1,38 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# PokeAPI - Versión 1.0
 
-# Getting Started
+Esta es la primera versión de PokeAPI. Se trata de una versión bastante limitada y apresurada, enfocada en proporcionar funcionalidades básicas.
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+> **Nota:** Se pueden encontrar imagenes y videos sobre el funcionamiento actual de esta V1 en la carpeta Demos dentro del codigo
 
-## Step 1: Start Metro
+## Funcionalidades
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+- Listado de Pokémons.
+- Búsqueda de Pokémons.
+- Implementación básica de Local Storage.
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+Al iniciar, si hay datos guardados localmente, la aplicación cargará esa información. En caso contrario, se realizará una petición remota para obtener los datos, que posteriormente se almacenarán localmente para futuras consultas.
 
-```sh
-# Using npm
-npm start
+Para cada Pokémon, se mostrará un pequeño modal con información básica y una imagen.
 
-# OR using Yarn
-yarn start
-```
+## Puntos a mejorar
 
-## Step 2: Build and run your app
+A continuación, se listan algunas mejoras potenciales para futuras versiones:
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+### Arquitectura y Código
+- Separación de la lógica en capas: **data, dominio y UI**.
+- Implementación de navegación y casos de uso.
+- Mejor organización del código.
+- Agregar comentarios explicativos sobre la lógica del código, aunque actualmente sea simple.
 
-### Android
+### UI/UX
+- Separación de componentes para mejorar la reutilización.
+- Creación de un tema local para estandarizar el diseño.
+- Agregar internacionalización para soportar múltiples idiomas.
+- Mejoras visuales para proporcionar feedback al usuario, como **loading spinners** y animaciones.
+- Funcionalidades adicionales que agreguen valor al aplicativo. 
+- Mejor soporte para temas dark y ligth (actualmente solamente el background color tiene este soporte)
 
-```sh
-# Using npm
-npm run android
+> **Nota:** Este repositorio muestra una versión básica de la aplicación. Para una estructura mejor organizada y alineada con buenas prácticas, puede revisar [HackerDigest](https://github.com/hikarisaotom/HackerDigest), que refleja mejor la estructura deseada si se hubiera contado con más tiempo.
+---
 
-# OR using Yarn
-yarn android
-```
-
-### iOS
-
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
-
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
-
-```sh
-bundle install
-```
-
-Then, and every time you update your native dependencies, run:
-
-```sh
-bundle exec pod install
-```
-
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
-
-```sh
-# Using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
-```
-
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
-
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
-
-## Step 3: Modify your app
-
-Now that you have successfully run the app, let's make changes!
-
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
-
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
-
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+Esta versión es solo un punto de partida y se espera seguir evolucionando con mejoras y nuevas funcionalidades en futuras versiones.
